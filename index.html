@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<header class="header">
+		<img src="assets/northwestern-university.svg" alt="northwestern-university">
+		<div class="btns">
+			<button class="btn reload" onclick="getFilesData()">&#x21bb;</button>
+			
+			<select class="btn btn-confirm" id="fileInput" onchange="getContent()">
+			<option value='Select Workspace'>Select Workspace</option>
+			</select>
+
+			<button  class="btn btn-confirm" onclick="updateFile()">Update values</button>
+			<input id='search' type="text" placeholder="Search.." onkeyup="search()">
+		</div>
+	</header>
+
+    <section class="content-body">
+      <h2>Terraform Automation<span>Only Demo</span></h2>
+      <table id="csvTable"></table>
+    </section>
+
+	<script type='module' src="/js/parseContent.js"></script>
+	<script src='/js/updateFile.js'></script>
+	<script src='/js/search.js'></script>
+	<script src='/js/getFilesData.js'></script>
+	<script src='/js/getContent.js'></script>
+      
+</body>
+</html>
