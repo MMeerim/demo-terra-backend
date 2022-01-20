@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const dir = '/root/terraform-linux/csvdecode/data';
+const dir = '/root/terraform-linux/csvdecode/data/';
 const dir2 = '/root/terraform-windows/csvdecode/data'
 
 function readFolder() {
